@@ -24,10 +24,15 @@ public:
 	}
 };
 
-int main()
+void Function()
 {
 	Entity e;
 	e.Print();
+}
+
+int main()
+{
+	Function();
 
 	std::cin.get();
 }
