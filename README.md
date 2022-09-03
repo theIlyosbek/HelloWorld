@@ -1,6 +1,10 @@
 # HelloWorld
 
-This is project is exmaple of some basics in c++
+## This is project is exmaple of some basics in c++
+
+## Getting Started
+
+###### 1. Downloading the repository:
 
 If you want to use first write this git command in your command-line " git clone git@github.com:theIlyosbek/HelloWorld.git "
 Second you should extract vendor zip in this project folder
