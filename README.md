@@ -6,7 +6,7 @@
 
 ###### 1. Downloading the repository:
 
-Start by cloning the repository with ``` git clone --recursive https://github.com/TheCherno/Hazel. ```
+Start by cloning the repository with ``` git clone --recursive git@github.com:theIlyosbek/HelloWorld.git```.
 
 If you want to use first write this git command in your command-line " git clone git@github.com:theIlyosbek/HelloWorld.git "
 Second you should extract vendor zip in this project folder
