@@ -10,8 +10,8 @@ Start by cloning the repository with ``` git clone --recursive git@github.com:th
 
 ###### 2. Configuring the dependencies:
 
-Run the [Setup.bat](https://github.com/theIlyosbek/HelloWorld/blob/main/Setup.bat) file found in project folder. 
+1. Unzip [vendor.zip](https://github.com/theIlyosbek/HelloWorld/blob/main/vendor.zip) in project folder.
 
-Second you should extract vendor zip in this project folder
-Third run " Setup.bat " in the project file
-Then you can open with visual studio (by HelloWorld.sln file)
+2. Run the [Setup.bat](https://github.com/theIlyosbek/HelloWorld/blob/main/Setup.bat) file found in project folder.
+
+3. After downloading and unzipping the [vendor.zip](https://github.com/theIlyosbek/HelloWorld/blob/main/vendor.zip), [Setup.bat](https://github.com/theIlyosbek/HelloWorld/blob/main/Setup.bat) which will then generate a Visual Studio solution file for user's usage.
