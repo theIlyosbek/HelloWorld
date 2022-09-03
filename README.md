@@ -14,4 +14,4 @@ Start by cloning the repository with ``` git clone --recursive git@github.com:th
 
 2. Run the [Setup.bat](https://github.com/theIlyosbek/HelloWorld/blob/main/Setup.bat) file found in project folder.
 
-3. After downloading and unzipping the [vendor.zip](https://github.com/theIlyosbek/HelloWorld/blob/main/vendor.zip), [Setup.bat](https://github.com/theIlyosbek/HelloWorld/blob/main/Setup.bat) which will then generate a Visual Studio solution file for user's usage.
+3. After downloading and unzipping the [vendor.zip](https://github.com/theIlyosbek/HelloWorld/blob/main/vendor.zip), after running [Setup.bat](https://github.com/theIlyosbek/HelloWorld/blob/main/Setup.bat) it will generate a Visual Studio solution file for user's usage.
