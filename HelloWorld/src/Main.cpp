@@ -16,6 +16,7 @@ public:
 
 class Player : public Entity
 {
+public:
 	std::string GetClassName() override { return "Player"; }
 };
 
