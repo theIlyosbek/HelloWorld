@@ -1,38 +1,39 @@
 #include <iostream>
+#include <string>
 #include "Log.h"
 
-class Entity
+class Printable
 {
 public:
-	float X, Y;
-
-	Entity()
-	{
-		X = 0.0f;
-		Y = 0.0f;
-		std::cout << "Created Entity!" << std::endl;
-	}
-
-	~Entity()
-	{
-		std::cout << "Destroyed Entity!" << std::endl;
-	}
-
-	void Print()
-	{
-		std::cout << X << ", " << Y << std::endl;
-	}
+	virtual std::string GetClassName() = 0;
 };
 
-void Function()
+class Entity : public Printable
 {
-	Entity e;
-	e.Print();
+public:
+	std::string GetClassName() override { return "Entity"; }
+};
+
+class Player : public Entity
+{
+	std::string GetClassName() override { return "Player"; }
+};
+
+void Print(Printable* obj)
+{
+	std::cout << obj->GetClassName() << std::endl;
 }
 
 int main()
 {
-	Function();
+	Entity* entity = new Entity();
+	Print(entity);
 
+	Entity* player = new Player();
+	Print(player);
+
+
+	delete entity;
+	delete player;
 	std::cin.get();
 }
