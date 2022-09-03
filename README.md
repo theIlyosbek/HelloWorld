@@ -10,7 +10,7 @@ Start by cloning the repository with ``` git clone --recursive git@github.com:th
 
 ###### 2. Configuring the dependencies:
 
-Run the Setup.bat file found in project folder. 
+Run the [[Setup.bat](https://github.com/theIlyosbek/HelloWorld/blob/main/Setup.bat)] file found in project folder. 
 
 Second you should extract vendor zip in this project folder
 Third run " Setup.bat " in the project file
