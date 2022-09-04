@@ -25,16 +25,15 @@ void Print(Printable* obj)
 	std::cout << obj->GetClassName() << std::endl;
 }
 
+void PrintString(const std::string& string)
+{
+	std::cout << string << std::endl;
+}
+
 int main()
 {
-	Entity* entity = new Entity();
-	Print(entity);
+	std::string name = std::string("Ilyosbek") + " hello!";
+	PrintString(name);
 
-	Entity* player = new Player();
-	Print(player);
-
-
-	delete entity;
-	delete player;
 	std::cin.get();
 }
