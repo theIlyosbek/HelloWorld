@@ -2,34 +2,19 @@
 #include <string>
 #include "Log.h"
 
-class Example
-{
-public:
-	Example()
-	{
-		std::cout << "Created Entity!" << std::endl;
-	}
-
-	Example(int x)
-	{
-		std::cout << "Created Entity with " << x << "!" << std::endl;
-	}
-};
-
 class Entity
 {
 private:
 	std::string m_Name;
-	Example example;
+	int m_Age;
 public:
-	Entity()
-		: m_Name("Unknown"), example(8)
+	explicit Entity(const std::string& name) // constructor which takes name is explicit, which means implicit conversation won't work!
+		: m_Name(name), m_Age(-1)
 	{
 
 	}
-
-	Entity(const std::string& name)
-		: m_Name(name)
+	explicit Entity(int age)				 // constructor which takes age is explicit, which means implicit conversation won't work!
+		: m_Name("Unknown"), m_Age(age)
 	{
 
 	}
@@ -39,13 +24,11 @@ public:
 
 int main()
 {
-	int a = 2;
-	int* b = new int[50];
-
-	Entity* e = new Entity();
-
-	delete e;
-	delete[] b;
+	Entity a("Cherno");					// explicit conversation, this line will work
+	Entity b(22);						// explicit conversation, this line will work
+																
+	Entity c = std::string("Cherno");   // implicit conversation, this line will be fail
+	Entity d = 22;					    // implicit conversation, this line will be fail
 
 	std::cin.get();
 }
