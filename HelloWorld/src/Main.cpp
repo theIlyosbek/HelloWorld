@@ -2,38 +2,50 @@
 #include <string>
 #include "Log.h"
 
-class Printable
+class Example
 {
 public:
-	virtual std::string GetClassName() = 0;
+	Example()
+	{
+		std::cout << "Created Entity!" << std::endl;
+	}
+
+	Example(int x)
+	{
+		std::cout << "Created Entity with " << x << "!" << std::endl;
+	}
 };
 
-class Entity : public Printable
+class Entity
 {
+private:
+	std::string m_Name;
+	Example example;
 public:
-	std::string GetClassName() override { return "Entity"; }
+	Entity()
+		: m_Name("Unknown"), example(8)
+	{
+
+	}
+
+	Entity(const std::string& name)
+		: m_Name(name)
+	{
+
+	}
+
+	const std::string& GetName() const { return m_Name; }
 };
-
-class Player : public Entity
-{
-public:
-	std::string GetClassName() override { return "Player"; }
-};
-
-void Print(Printable* obj)
-{
-	std::cout << obj->GetClassName() << std::endl;
-}
-
-void PrintString(const std::string& string)
-{
-	std::cout << string << std::endl;
-}
 
 int main()
 {
-	std::string name = std::string("Ilyosbek") + " hello!";
-	PrintString(name);
+	int a = 2;
+	int* b = new int[50];
+
+	Entity* e = new Entity();
+
+	delete e;
+	delete[] b;
 
 	std::cin.get();
 }
